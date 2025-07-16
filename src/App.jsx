@@ -1,13 +1,15 @@
 import Navbar from './components/Navbar'
-import Spline from './components/Spline'
+import Hero from './components/Hero'
+import HeroFallback from './components/HeroFallback';
+import About from './components/About';
 
 function App() {
   return (
     <>
       <Navbar />
-      <div className="w-full h-[600px] md:h-[700px] lg:h-screen overflow-hidden max-w-full max-h-full relative">
-        <Spline />
-      </div>
+      <Hero/>
+      <HeroFallback/>
+      <About/>
     </>
   )
 }

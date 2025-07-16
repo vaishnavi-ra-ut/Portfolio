@@ -1,14 +1,19 @@
+import React from 'react';
+
 const Navbar = () => {
   return (
-    <nav className="flex items-center px-12 py-4 fixed top-0 z-50 navbar bg-transparent backdrop-blur-md shadow-xs justify-between left-0 right-0">
-      <h2 className="text-2xl font-bold text-gray-400">Vaishnavi</h2>
-      <ul className="flex gap-8 list-none m-0">
-        <li><a href="#home" className="text-gray-700 hover:text-blue-600">Home</a></li>
-        <li><a href="#about" className="text-gray-700 hover:text-blue-600">About</a></li>
-        <li><a href="#projects" className="text-gray-700 hover:text-blue-600">Projects</a></li>
-        <li><a href="#contact" className="text-gray-700 hover:text-blue-600">Contact</a></li>
-      </ul>
-    </nav>
+    <div className="navbar fixed top-0 left-0 w-full z-50 bg-transparent backdrop-blur-2xl shadow-sm px-4">
+      <div className="flex-1">
+        <a className="btn btn-ghost text-xl">Portfolio</a>
+      </div>
+      <div className="flex-none">
+        <ul className="menu menu-horizontal px-1">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
   );
 };
 
