@@ -4,49 +4,12 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 import { 
-  Calendar, 
   Download, 
   MapPin, 
-  Briefcase, 
-  GraduationCap, 
-  Award,
   User,
-  Code,
-  Heart
 } from 'lucide-react'
 
 const About = () => {
-  const timelineData = [
-    {
-      year: "2023",
-      title: "Senior Full Stack Developer",
-      company: "Tech Solutions Inc.",
-      description: "Leading development of scalable web applications",
-      icon: <Briefcase className="w-4 h-4" />
-    },
-    {
-      year: "2021",
-      title: "Full Stack Developer",
-      company: "Digital Innovations",
-      description: "Developed modern web solutions for enterprise clients",
-      icon: <Code className="w-4 h-4" />
-    },
-    {
-      year: "2020",
-      title: "Frontend Developer",
-      company: "Creative Studio",
-      description: "Specialized in responsive design and user interfaces",
-      icon: <User className="w-4 h-4" />
-    },
-    {
-      year: "2018",
-      title: "Computer Science Degree",
-      company: "University of Technology",
-      description: "Bachelor's degree with focus on web development",
-      icon: <GraduationCap className="w-4 h-4" />
-    }
-  ]
-
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -99,14 +62,14 @@ const About = () => {
               </p>
 
               {/* Highlighted quote */}
-              <div className="relative">
-                <div className="absolute left-0 top-0 w-1 h-full bg-primary rounded-full" />
-                <div className="pl-6 py-2">
-                  <p className="text-xl font-medium text-foreground italic text-gray-200">
-                    "I believe in building with <span className="text-primary">passion</span> , 
-                    <span className="text-primary"> precision</span> , and keeping things simple yet impactful."
-                  </p>
-                </div>
+<div className="relative flex">
+  <div className="w-1 bg-primary rounded-full mr-4" />
+  <p className="text-xl font-medium italic text-gray-200">
+    "I believe in building with <span className="text-primary">passion</span>, 
+    <span className="text-primary"> precision</span>, and keeping things simple yet impactful."
+  </p>
+
+
               </div>
 
               {/* Skills highlight */}
@@ -124,7 +87,7 @@ const About = () => {
           </motion.div>
 
           {/* Left Column - Photo and Visual Elements (moved to right) */}
-          <motion.div variants={itemVariants} className="space-y-8">
+          <motion.div variants={itemVariants} className="space-y-8 hidden sm:block">
             {/* Photo with geometric border and animations */}
             <div className="relative">
               <div className="relative group ">
@@ -135,17 +98,22 @@ const About = () => {
                 {/* Photo placeholder with border treatment */}
                 <div className="relative bg-transparent rounded-2xl mt-3 p-4 border border-border group-hover:border-primary/40 transition-colors duration-300 w-[400px] mx-auto ">
                   <div className="aspect-square bg-gradient-to-br from-muted to-gray-600 rounded-xl flex items-center justify-center relative overflow-hidden">
-                    <User className="w-16 h-16 text-muted-foreground text-gray-400" />
-                    
-                    {/* Animated overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    
-                    {/* Geometric corner decorations */}
-                    <div className="absolute top-2 left-2 w-4 h-4 border-l-2 border-t-2 border-primary opacity-50" />
-                    <div className="absolute top-2 right-2 w-4 h-4 border-r-2 border-t-2 border-primary opacity-50" />
-                    <div className="absolute bottom-2 left-2 w-4 h-4 border-l-2 border-b-2 border-primary opacity-50" />
-                    <div className="absolute bottom-2 right-2 w-4 h-4 border-r-2 border-b-2 border-primary opacity-50" />
-                  </div>
+  <img
+    src="https://i.postimg.cc/wvrXHpJc/4.jpg"
+    alt="Profile"
+    className="w-full h-full object-cover rounded-xl opacity-70 transition duration-300 ease-in-out"
+  />
+
+  {/* Optional: Animated overlay */}
+  <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+  {/* Geometric corner decorations */}
+  <div className="absolute top-2 left-2 w-4 h-4 border-l-2 border-t-2 border-primary opacity-50" />
+  <div className="absolute top-2 right-2 w-4 h-4 border-r-2 border-t-2 border-primary opacity-50" />
+  <div className="absolute bottom-2 left-2 w-4 h-4 border-l-2 border-b-2 border-primary opacity-50" />
+  <div className="absolute bottom-2 right-2 w-4 h-4 border-r-2 border-b-2 border-primary opacity-50" />
+</div>
+
                 </div>
               </div>
             </div>

@@ -82,8 +82,8 @@ export default function HeroSection() {
                 className="space-y-5"
               >
                 <h1 className="text-primary text-3xl font-bold block md:hidden">
-  Hi, I am
-</h1>
+                         Hi, I am
+                </h1>
 
                 <h1 className="text-4xl  md:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
                   Vaishnavi{" "}
@@ -236,36 +236,12 @@ export default function HeroSection() {
       </div>
 
       {/* Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 1.2 }}
-        className="absolute bottom-3 left-1/2 transform -translate-x-1/2"
-      >
-        <motion.div
-          className="w-6 h-10 border-2 border-primary/50 rounded-full flex justify-center"
-          animate={{
-            y: [0, 10, 0],
-          }}
-          transition={{
-            duration: 2,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        >
-          <motion.div
-            className="w-1 h-3 bg-primary rounded-full mt-2"
-            animate={{
-              height: [12, 6, 12],
-            }}
-            transition={{
-              duration: 2,
-              repeat: Infinity,
-              ease: "easeInOut"
-            }}
-          />
-        </motion.div>
-      </motion.div>
+      {/* Scroll Arrow */}
+      <a href="#about">
+        <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-primary text-3xl animate-bounce z-10">
+          ↓
+        </div>
+      </a>
     </section>
   )
 }
