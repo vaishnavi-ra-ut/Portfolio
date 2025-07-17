@@ -28,7 +28,7 @@ const socialLinks = [
     icon: Github,
     label: "GitHub",
     link: "https://github.com/vaishnavi-ra-ut",
-    color: "hover:text-gray-300 hover:border-gray-300"
+    color: "hover:text-primary hover:border-primary"
   },
   {
     icon: Linkedin,
