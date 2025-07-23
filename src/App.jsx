@@ -4,6 +4,7 @@ import HeroFallback from './components/HeroFallback';
 import About from './components/About';
 import Contact from './components/Contact'
 import Footer from './components/Footer';
+import Project from './components/Project'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Hero/>
       <HeroFallback/>
       <About/>
+      <Project/>
       <Contact/>
       <Footer/>
     </>
