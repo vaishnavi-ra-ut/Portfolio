@@ -7,7 +7,7 @@ export const projectsData = [
     date: "Jan 2024",
     duration: "20 Days",
     description: "An AI-powered simulation engine where users interact with customizable AI personas...",
-    icon: "E",
+    icon: "P",
     image: "https://i.postimg.cc/d3GmWxpx/Screenshot-2025-07-23-022731.png",
     link: "https://promptpersona.vercel.app",
     challenges: [
@@ -116,7 +116,7 @@ export const projectsData = [
   },
   {
     id: 6,
-    title: "MovieBooking Website",
+    title: "Book&Watch",
     category: "Fullstack",
     tags: ["React", "Node.js", "MongoDB", "TMDB API"],
     date: "Oct 2023",

@@ -24,7 +24,7 @@ const Hero3D = () => {
       </div>
       
       {/* Scroll Arrow */}
-      <a href="#about">
+      <a href="#footer">
         <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-white text-3xl animate-bounce z-10">
           ↓
         </div>

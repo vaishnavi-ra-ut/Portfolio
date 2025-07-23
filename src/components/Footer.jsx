@@ -11,31 +11,8 @@ export default function Footer() {
     })
   }
 
-  const socialLinks = [
-    {
-      name: 'Github',
-      href: 'https://github.com',
-      icon: Github
-    },
-    {
-      name: 'LinkedIn',
-      href: 'https://linkedin.com',
-      icon: Linkedin
-    },
-    {
-      name: 'Twitter',
-      href: 'https://twitter.com',
-      icon: Twitter
-    },
-    {
-      name: 'Email',
-      href: 'mailto:hello@example.com',
-      icon: Mail
-    }
-  ]
-
   return (
-    <footer className="bg-[#0a0a0a] border-t border-gray-600">
+    <footer id='footer' className="bg-[#0a0a0a] border-t border-gray-600">
       <div className="max-w-4xl mx-auto px-6 py-12">
         <div className="flex flex-col items-center space-y-8">
 

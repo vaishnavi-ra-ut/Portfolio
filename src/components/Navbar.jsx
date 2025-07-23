@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -10,14 +11,12 @@ const Navbar = () => {
   return (
     <div className="navbar fixed top-0 left-0 w-full z-50 bg-transparent backdrop-blur-2xl shadow-sm px-4">
       <div className="flex-1">
-        <a onClick={scrollToTop} className="btn btn-ghost text-xl">Portfolio</a>
+        <Link to="/" onClick={scrollToTop} className="btn btn-ghost text-xl">Portfolio</Link>
       </div>
-      <div className="flex-none">
-        <ul className="menu menu-horizontal px-1">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      <div className="flex-none space-x-4">
+        <Link to="/about" className="btn btn-sm btn-ghost">About</Link>
+        <Link to="/projects" className="btn btn-sm btn-ghost">Projects</Link>
+        <Link to="/contact" className="btn btn-sm btn-ghost">Contact</Link>
       </div>
     </div>
   );
