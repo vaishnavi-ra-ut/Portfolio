@@ -6,7 +6,7 @@ const categories = ["All Projects", "Frontend", "Fullstack"];
 
 export default function Projects() {
   const [selectedCategory, setSelectedCategory] = useState("All Projects");
-  const [activeProject, setActiveProject] = useState(null); // changed from activeModal
+  const [activeProject, setActiveProject] = useState(null);
 
   const filteredProjects =
     selectedCategory === "All Projects"

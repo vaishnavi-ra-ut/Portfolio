@@ -24,26 +24,26 @@ export const projectsData = [
   },
   {
     id: 2,
-    title: "DevVerse",
+    title: "Book&Watch",
     category: "Fullstack",
-    tags: ["React.js", "AWS", "Node.js", "Redux"],
-    date: "Feb 2024",
+    tags: ["React", "Node.js", "MongoDB", "TMDB API"],
+    date: "Oct 2023",
     duration: "1 month",
-    description: "A platform for developers to showcase projects, connect, and get feedback...",
-    icon: "D",
-    image: "/images/devverse.png",
-    link: "https://devverse.vercel.app",
+    description: "An online platform for booking movie tickets with real-time seat selection...",
+    icon: "M",
+    image: "https://i.postimg.cc/fThM0BZq/Screenshot-2025-07-24-231345.png",
+    link: "https://moviebooking.vercel.app",
     challenges: [
-      "Structuring Firestore data for scalability",
-      "Implementing upvotes and real-time updates efficiently",
-      "Creating a modular, clean UI across pages"
+      "Building an intuitive seat selection and availability system",
+      "Designing role-based dashboards for users and admins",
+      "Ensuring booking accuracy in concurrent environments"
     ],
     outcomes: [
-      "Built a responsive, community-driven platform",
-      "Integrated Markdown-rich blog editor with preview",
-      "Achieved smooth real-time updates using Firestore listeners"
+      "Created dynamic seat and show management with MongoDB",
+      "Enabled secure login, booking confirmation, and filters",
+      "Implemented full-stack movie CRUD with admin control"
     ],
-    github: "https://github.com/vaishnavi-ra-ut/DevTinder-UI"
+    github: "https://github.com/vaishnavi-ra-ut/BookAndWatch-Backend"
   },
   {
     id: 3,
@@ -67,6 +67,29 @@ export const projectsData = [
       "Blended AI UX into a familiar streaming UI"
     ],
     github: "https://github.com/vaishnavi-ra-ut/Netfilx-Project"
+  },
+  {
+    id: 2,
+    title: "DevVerse",
+    category: "Fullstack",
+    tags: ["React.js", "AWS", "Node.js", "Redux"],
+    date: "Feb 2024",
+    duration: "1 month",
+    description: "A platform for developers to showcase projects, connect, and get feedback...",
+    icon: "D",
+    image: "/images/devverse.png",
+    link: "https://devverse.vercel.app",
+    challenges: [
+      "Structuring Firestore data for scalability",
+      "Implementing upvotes and real-time updates efficiently",
+      "Creating a modular, clean UI across pages"
+    ],
+    outcomes: [
+      "Built a responsive, community-driven platform",
+      "Integrated Markdown-rich blog editor with preview",
+      "Achieved smooth real-time updates using Firestore listeners"
+    ],
+    github: "https://github.com/vaishnavi-ra-ut/DevTinder-UI"
   },
   {
     id: 4,
@@ -113,28 +136,5 @@ export const projectsData = [
       "Handled authentication, order history, and admin workflows"
     ],
     github: "https://github.com/vaishnavi-ra-ut/Food-app-react"
-  },
-  {
-    id: 6,
-    title: "Book&Watch",
-    category: "Fullstack",
-    tags: ["React", "Node.js", "MongoDB", "TMDB API"],
-    date: "Oct 2023",
-    duration: "1.5 month",
-    description: "An online platform for booking movie tickets with real-time seat selection...",
-    icon: "M",
-    image: "/images/moviebooking.png",
-    link: "https://moviebooking.vercel.app",
-    challenges: [
-      "Building an intuitive seat selection and availability system",
-      "Designing role-based dashboards for users and admins",
-      "Ensuring booking accuracy in concurrent environments"
-    ],
-    outcomes: [
-      "Created dynamic seat and show management with MongoDB",
-      "Enabled secure login, booking confirmation, and filters",
-      "Implemented full-stack movie CRUD with admin control"
-    ],
-    github: "https://github.com/vaishnavi-ra-ut/movie-booking"
   }
 ];

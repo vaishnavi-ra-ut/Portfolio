@@ -1,103 +1,75 @@
-"use client"
+import { FaCode, FaLaptopCode, FaLightbulb } from "react-icons/fa";
 
-import { motion } from 'framer-motion'
-import { Download, MapPin } from 'lucide-react'
-
-const About = () => {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { staggerChildren: 0.2 }
-    }
-  }
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6, ease: "easeOut" }
-    }
-  }
-
+export default function About() {
   return (
-  <section id="about" className="bg-[#030303] py-24 px-10">
-    <div className="container mx-auto px-4">
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.8 }}
-        variants={containerVariants}
-        className="grid grid-cols-1 lg:grid-cols-1 gap-12 items-center ml-10"
-      >
-        {/* About Content */}
-        <motion.div variants={itemVariants} className="space-y-6">
-          <div className="space-y-3">
-            <h2 className="text-4xl font-bold text-gray-200">
-              About <span className="text-[#7a7ba6]">Me</span>
-            </h2>
-            <div className="flex items-center gap-2 text-gray-400">
-              <MapPin className="w-4 h-4" />
-              <span>Based in India</span>
-            </div>
-          </div>
+    <section
+      id="about"
+      className="bg-[#030303] text-white py-16 px-6 md:px-12 lg:px-24 animate-fade-in"
+    >
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-8">
+          <span className="bg-gradient-to-r from-primary to-blue-400/18 text-transparent bg-clip-text">
+            About Me
+          </span>
+        </h2>
 
-          <div className="space-y-5 max-w-4xl">
-            <p className="text-lg leading-relaxed text-gray-300">
-              I’m a final-year B.Tech student majoring in Artificial Intelligence & Data Science,
-              passionate about blending <span className="text-[#898ac3] font-medium">full-stack development</span> with
-              <span className="text-[#898ac3] font-medium"> AI-powered solutions</span>. From concept to code, I thrive on building
-              real-world applications using modern stacks like React, Node.js, and MongoDB.
+        <div className="grid md:grid-cols-2 gap-10 items-center">
+          {/* Left side - Text Content */}
+          <div>
+            <p className="r max-w-3xl mx-auto text-white text-lg leading-relaxed transition-all duration-300 animate-fade-in">
+        Hi! I'm <span className="font-semibold text-primary">Vaishnavi</span>,
+        a 4th-year AI & DS student and a full-stack web developer. I love crafting
+        responsive, elegant UIs and building smart, scalable apps that blend the
+        power of AI and intuitive design.
+      </p>
+            <p className="text-lg leading-relaxed mb-4">
+              I'm a passionate{" "}
+              <span className="text-primary font-semibold">Full-Stack Developer</span> with a knack
+              for building clean and efficient user interfaces. I love blending{" "}
+              <span className="text-primary/70">design</span> with{" "}
+              <span className="text-primary/70">functionality</span> to deliver engaging experiences.
             </p>
 
-            <p className="text-lg leading-relaxed text-gray-300">
-              Right now, I’m diving deep into Java, system design, and machine learning. My mission is to build apps
-              that don’t just work — they *matter*.
+            <p className="text-lg leading-relaxed mb-4">
+              My strengths lie in{" "}
+              <span className="text-primary font-semibold">
+                React, Tailwind CSS, Node.js, MongoDB
+              </span>
+              , and I'm currently diving deep into{" "}
+              <span className="text-primary/70">AI/ML-powered web experiences</span>.
             </p>
 
-            <div className="relative flex">
-              <div className="w-1 bg-[#898ac3] rounded-full mr-4" />
-              <p className="text-xl font-medium italic text-gray-200">
-                "I believe in building with <span className="text-[#898ac3]">passion</span>,
-                <span className="text-[#898ac3]"> precision</span>, and keeping things simple yet impactful."
-              </p>
-            </div>
+            <p className="text-lg leading-relaxed">
+              When I'm not coding, you’ll find me exploring the latest tech trends or sketching UI
+              ideas with coffee!
+            </p>
+          </div>
 
-            <div>
-              <h3 className="text-xl font-semibold text-gray-200 mt-6 mb-3">Tech Stack & Tools:</h3>
-              <div className="flex flex-wrap gap-3">
-                {[
-                  'React', 'JavaScript', 'Node.js', 'Express.js', 'MongoDB',
-                  'HTML', 'CSS', 'Tailwind CSS', 'Git & GitHub', 'Vercel', 'Figma'
-                ].map((skill) => (
-                  <span
-                    key={skill}
-                    className="px-3 py-1 bg-[#1c1c1c] text-gray-200 rounded-full text-sm border border-gray-600 hover:border-[#898ac3] hover:text-[#898ac3] transition-colors duration-200"
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
+          {/* Right side - Skills/Icons */}
+          <div className="grid grid-cols-2 gap-6 text-center">
+            <div className=" bg-transparent  rounded-xl p-6 shadow-md hover:shadow-primary/40 transition duration-300">
+              <FaCode className="text-4xl text-primary mx-auto mb-2" />
+              <h3 className="text-lg font-semibold">Frontend </h3>
+              <p className="text-sm text-gray-300 mt-2">React · Tailwind · UI/UX</p>
             </div>
-
-            <div className="pt-3">
-              <a
-                href="/resume.pdf"
-                download
-                className="inline-flex items-center bg-[#424478] px-6 py-2 text-white font-medium text-lg rounded-lg hover:scale-105 hover:shadow-lg transition-all duration-150 hover:bg-[#9495c2]"
-              >
-                <Download className="w-5 h-5 mr-2" />
-                Download Resume
-              </a>
+            <div className="bg-transparent  rounded-xl p-6 shadow-md hover:shadow-primary/40 transition duration-300">
+              <FaLaptopCode className="text-4xl text-primary mx-auto mb-2" />
+              <h3 className="text-lg font-semibold">Backend </h3>
+              <p className="text-sm text-gray-300 mt-2">Node.js · MongoDB · APIs</p>
+            </div>
+            <div className=" bg-transparent  rounded-xl p-6 shadow-md hover:shadow-primary/40 transition duration-300">
+              <FaLightbulb className="text-4xl text-primary mx-auto mb-2" />
+              <h3 className="text-lg font-semibold">Creative Thinker</h3>
+              <p className="text-sm text-gray-300 mt-2">Problem Solving · Design Mindset</p>
+            </div>
+            <div className=" bg-transparent  rounded-xl p-6 shadow-md hover:shadow-primary/40 transition duration-300">
+              <FaLaptopCode className="text-4xl text-primary mx-auto mb-2" />
+              <h3 className="text-lg font-semibold">Tech Explorer</h3>
+              <p className="text-sm text-gray-300 mt-2">AI/ML</p>
             </div>
           </div>
-        </motion.div>
-      </motion.div>
-    </div>
-  </section>
-);
-
+        </div>
+      </div>
+    </section>
+  );
 }
-
-export default About
