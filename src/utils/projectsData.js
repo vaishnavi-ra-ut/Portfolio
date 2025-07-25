@@ -30,7 +30,7 @@ export const projectsData = [
     date: "Oct 2023",
     duration: "1 month",
     description: "An online platform for booking movie tickets with real-time seat selection...",
-    icon: "M",
+    icon: "B",
     image: "https://i.postimg.cc/fThM0BZq/Screenshot-2025-07-24-231345.png",
     link: "https://moviebooking.vercel.app",
     challenges: [

@@ -1,7 +1,7 @@
 "use client"
 
 import { Github, Linkedin, Instagram } from "lucide-react"
-
+import { Link } from "react-router"
 import { motion } from "framer-motion"
 
 export default function HeroSection() {
@@ -143,7 +143,7 @@ export default function HeroSection() {
                   whileTap={{ scale: 0.95 }}
                   
                 >
-                  <a href="#about">About Me</a>
+                  <Link to='/about'>About Me</Link>
                 </motion.button>
               </motion.div>
             </div>
@@ -237,7 +237,7 @@ export default function HeroSection() {
 
       {/* Scroll Indicator */}
       {/* Scroll Arrow */}
-      <a href="#about">
+      <a href="#footer">
         <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-primary text-3xl animate-bounce z-10">
           ↓
         </div>
