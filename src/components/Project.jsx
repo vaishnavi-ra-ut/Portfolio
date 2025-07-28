@@ -16,7 +16,7 @@ export default function Projects() {
   return (
     <div id="projects" className="py-16 px-6 bg-[#030303] text-white">
       <h2 className="text-4xl font-bold text-center">
-        Featured <span className="text-[#636ae]">Projects</span>
+        Featured <span className="text-[#636ae8]">Projects</span>
       </h2>
       <p className="text-center text-gray-400 mt-2">
         Explore different Projects I have made!
