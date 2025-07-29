@@ -66,7 +66,7 @@ export const projectsData = [
       "Enabled secure login, booking confirmation, and filters",
       "Implemented full-stack movie CRUD with admin control"
     ],
-    github: "https://github.com/vaishnavi-ra-ut/BookAndWatch-Backend"
+    github: "https://github.com/Dipika1226/BookAndWatch-frontend"
   },
   {
     id: 4,
@@ -89,7 +89,7 @@ export const projectsData = [
       "Created login-based movie dashboard and genre filters",
       "Blended AI UX into a familiar streaming UI"
     ],
-    github: "https://github.com/vaishnavi-ra-ut/Netfilx-Project"
+    github: "https://github.com/vaishnavi-ra-ut/net-flix"
   },
   {
     id: 5,
