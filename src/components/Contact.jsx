@@ -1,34 +1,15 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Mail, Phone, MapPin, Github, Linkedin, Instagram } from "lucide-react"
-
-const contactInfo = [
-  {
-    icon: Mail,
-    label: "Email",
-    value: "rautvaishnavi29@gmail.com",
-    link: "mailto:rautvaishnavi29@gmail.com"
-  },
-  {
-    icon: Phone,
-    label: "Phone",
-    value: "+91 930136XXXX"
-  },
-  {
-    icon: MapPin,
-    label: "Location",
-    value: "Madhya Pradesh, India",
-    link: "https://maps.app.goo.gl/7yRFawbnQ4j69hz28"
-  }
-]
+import contactInfo from "../utils/contactInfo"
+import { Github, Linkedin, Instagram } from "lucide-react"
 
 const socialLinks = [
   {
     icon: Github,
     label: "GitHub",
     link: "https://github.com/vaishnavi-ra-ut",
-    color: "hover:text-primary hover:border-primary"
+    color: "hover:text-[#636ae8] hover:border-[#636ae8]/50"
   },
   {
     icon: Linkedin,
@@ -46,42 +27,50 @@ const socialLinks = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="bg-[#030303] relative overflow-hidden flex justify-center">
-      <div className="max-w-4xl mx-auto px-4 py-16 w-full">
+    <section
+      id="contact"
+      className="relative overflow-hidden flex justify-center bg-transparent backdrop-blur h-screen"
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/70 backdrop-blur-md z-0" />
+
+      {/* Main Content */}
+      <div className="relative z-10 max-w-4xl mx-auto px-4 py-20 w-full">
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
+          className="text-center mb-14"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Get in Touch</h2>
-          <p className="text-lg text-base-content/70 max-w-2xl mx-auto">
-            Ready to bring your ideas to life? I'm always excited to discuss new projects and opportunities.
+          <h2 className="text-4xl font-extrabold text-white mb-3 drop-shadow-md">
+            Let’s Connect
+          </h2>
+          <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+            Got an idea or just want to say hi? I’d love to hear from you.
           </p>
         </motion.div>
 
-        {/* Content Column (centered on large screens, stacked on small) */}
+        {/* Contact Info Cards */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="flex flex-col items-center space-y-10"
+          className="flex flex-col items-center space-y-12"
         >
-          {/* Contact Info Cards */}
           <div className="w-full max-w-xl space-y-6">
             {contactInfo.map((item, index) => (
               <a key={index} href={item.link || "#"} className="block w-full">
-                <div className="card bg-base-200 hover:shadow-lg transition duration-300 p-6 w-full">
+                <div className="p-5 border border-white/10 bg-white/5 backdrop-blur-xs rounded-lg hover:shadow-[0_0_20px_#636ae8] transition-shadow">
                   <div className="flex items-center gap-4">
-                    <div className="p-3 bg-primary/20 rounded-lg">
-                      <item.icon className="w-6 h-6 text-primary" />
+                    <div className="p-3 bg-[#636ae8]/20 rounded-lg">
+                      <item.icon className="w-6 h-6 text-[#636ae8]" />
                     </div>
                     <div>
-                      <p className="text-sm text-base-content/70 font-medium">{item.label}</p>
-                      <p className="text-base-content font-semibold">{item.value}</p>
+                      <p className="text-sm text-gray-400 font-medium">{item.label}</p>
+                      <p className="text-white font-semibold">{item.value}</p>
                     </div>
                   </div>
                 </div>
@@ -89,17 +78,17 @@ export default function Contact() {
             ))}
           </div>
 
-          {/* Follow Me Section */}
-          <div className="space-y-4 w-full">
-            <h3 className="text-2xl font-bold text-center text-foreground">Follow Me</h3>
-            <div className="flex justify-center flex-wrap gap-4">
+          {/* Follow Me */}
+          <div className="space-y-5 w-full">
+            <h3 className="text-2xl font-bold text-white text-center">Follow Me</h3>
+            <div className="flex justify-center gap-5 flex-wrap">
               {socialLinks.map((social, index) => (
                 <a
                   key={index}
                   href={social.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`p-4 bg-base-200 border border-base-300 rounded-lg transition ${social.color}`}
+                  className={`p-4 border border-white/10 text-white bg-white/5 backdrop-blur-sm rounded-full transition-all duration-300 hover:shadow-[0_0_15px] ${social.color}`}
                 >
                   <social.icon className="w-6 h-6" />
                 </a>
