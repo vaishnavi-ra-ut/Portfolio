@@ -28,21 +28,22 @@ export default function Projects() {
         </p>
 
         {/* Filter Buttons */}
-        <div className="flex justify-center gap-3 flex-wrap mb-10">
-          {categories.map((category) => (
-            <button
-              key={category}
-              onClick={() => setSelectedCategory(category)}
-              className={`px-4 py-2 rounded-full font-medium transition-all duration-300 border ${
-                selectedCategory === category
-                  ? "bg-[#636ae8] text-white border-transparent shadow-md"
-                  : "bg-black/30 text-white border-gray-600 hover:border-[#636ae8]"
-              }`}
-            >
-              {category}
-            </button>
-          ))}
-        </div>
+        <div className="flex justify-center flex-wrap gap-3 mb-10">
+  {categories.map((category) => (
+    <button
+      key={category}
+      onClick={() => setSelectedCategory(category)}
+      className={`px-4 py-2 rounded-full font-medium transition-all duration-300 outline-none border ${
+        selectedCategory === category
+          ? "bg-[#636ae8] text-white border-[#636ae8] shadow-lg"
+          : "bg-black/30 text-white border-gray-500 hover:border-[#636ae8] hover:bg-[#636ae8]/70"
+      }`}
+    >
+      {category}
+    </button>
+  ))}
+</div>
+
 
         {/* Project Cards */}
         <div className="space-y-10">
@@ -58,7 +59,7 @@ export default function Projects() {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="object-contain h-full"
+                  className="object-cover h-full"
                 />
               </div>
 

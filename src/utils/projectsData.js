@@ -23,7 +23,30 @@ export const projectsData = [
     github: "https://github.com/vaishnavi-ra-ut/PromptPersona-Frontend"
   },
   {
-    id: 2,
+  id: 2,
+  title: "SupplySaathi",
+  category: "Fullstack",
+  tags: ["React", "Node.js", "MongoDB", "Socket.io", "TailwindCSS"],
+  date: "Jul 2024",
+  duration: "18 Days",
+  description: "A real-time inventory and order management system connecting street vendors with nearby suppliers. Features include live stock updates, group ordering, and automated alerts for low stock or price drops.",
+  icon: "S",
+  image: "https://i.postimg.cc/7ZByZKBn/Screenshot-2025-07-30-002703.png",
+  link: "https://supplysaathi.vercel.app",
+  challenges: [
+    "Handling real-time stock sync between multiple suppliers and vendors",
+    "Designing group-order logic for partial fulfillment and fallback",
+    "Ensuring smooth UX for low-tech users (voice support, simple UI)"
+  ],
+  outcomes: [
+    "Enabled real-time inventory updates with Socket.IO and REST fallback",
+    "Implemented group-ordering flow with timeout and partial fulfillment",
+    "Reduced vendor supply gaps by 40% through smart alerts and preferences"
+  ],
+  github: "https://github.com/vaishnavi-ra-ut/SupplySaathi"
+  },
+  {
+    id: 3,
     title: "Book&Watch",
     category: "Fullstack",
     tags: ["React", "Node.js", "MongoDB", "TMDB API"],
@@ -46,7 +69,7 @@ export const projectsData = [
     github: "https://github.com/vaishnavi-ra-ut/BookAndWatch-Backend"
   },
   {
-    id: 3,
+    id: 4,
     title: "NetflixGPT",
     category: "Frontend",
     tags: ["React", "Gemini AI", "TMDB API", "Redux"],
@@ -69,7 +92,7 @@ export const projectsData = [
     github: "https://github.com/vaishnavi-ra-ut/Netfilx-Project"
   },
   {
-    id: 2,
+    id: 5,
     title: "DevVerse",
     category: "Fullstack",
     tags: ["React.js", "AWS", "Node.js", "Redux"],
@@ -92,7 +115,7 @@ export const projectsData = [
     github: "https://github.com/vaishnavi-ra-ut/DevTinder-UI"
   },
   {
-    id: 4,
+    id: 6,
     title: "WeatherBeats",
     category: "Fullstack",
     tags: ["React", "Spotify API", "Weather API"],
@@ -115,7 +138,7 @@ export const projectsData = [
     github: "https://github.com/vaishnavi-ra-ut/WeatherBeats"
   },
   {
-    id: 5,
+    id: 7,
     title: "FoodDelivery App",
     category: "Frontend",
     tags: ["React", "Node.js", "MongoDB"],
