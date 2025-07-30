@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router";
 
 export default function About() {
   return (
@@ -42,14 +43,13 @@ export default function About() {
           Outside of development, I love vibing to music, dancing, and occasionally diving into creative designs.
         </p>
 
-        <motion.a
+        <motion
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          href="/projects"
           className="inline-block px-5 py-2 rounded-full bg-[#636ae8] hover:drop-shadow-[0_0_6px_rgba(192,132,252,0.4)] shadow-lg"
         >
-          Explore My Projects
-        </motion.a>
+         <Link to='/projects'> Explore My Projects</Link>
+        </motion>
       </motion.div>
     </section>
   );

@@ -29,10 +29,10 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden flex justify-center bg-transparent backdrop-blur h-screen"
+      className="relative overflow-y-auto flex justify-center bg-transparent backdrop-blur min-h-screen"
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/70 backdrop-blur-md z-0" />
+      <div className="absolute inset-0 bg-black/40 backdrop-blur-md -z-50" />
 
       {/* Main Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-4 py-20 w-full">
@@ -47,7 +47,7 @@ export default function Contact() {
           <h2 className="text-4xl font-extrabold text-white mb-3 drop-shadow-md">
             Let’s Connect
           </h2>
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             Got an idea or just want to say hi? I’d love to hear from you.
           </p>
         </motion.div>
@@ -58,12 +58,12 @@ export default function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="flex flex-col items-center space-y-12"
+          className="flex flex-col items-center space-y-10"
         >
           <div className="w-full max-w-xl space-y-6">
             {contactInfo.map((item, index) => (
               <a key={index} href={item.link || "#"} className="block w-full">
-                <div className="p-5 border border-white/10 bg-white/5 backdrop-blur-xs rounded-lg hover:shadow-[0_0_20px_#636ae8] transition-shadow">
+                <div className="bg-white/5 backdrop-blur-md border border-gray-700 rounded-xl p-6 transition-transform duration-300 hover:scale-[1.02] hover:shadow-[0_0_20px_#636ae8] flex flex-col md:flex-row items-center gap-6">
                   <div className="flex items-center gap-4">
                     <div className="p-3 bg-[#636ae8]/20 rounded-lg">
                       <item.icon className="w-6 h-6 text-[#636ae8]" />

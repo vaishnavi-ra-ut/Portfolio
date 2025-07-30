@@ -9,7 +9,7 @@ export const projectsData = [
     description: "An AI-powered simulation engine where users interact with customizable AI personas...",
     icon: "P",
     image: "https://i.postimg.cc/d3GmWxpx/Screenshot-2025-07-23-022731.png",
-    link: "https://promptpersona.vercel.app",
+    link: "https://prompt-persona-frontend.vercel.app/",
     challenges: [
       "Maintaining consistent persona behavior with varying AI responses",
       "Managing real-time updates with sockets and Redux",
@@ -32,7 +32,7 @@ export const projectsData = [
   description: "A real-time inventory and order management system connecting street vendors with nearby suppliers. Features include live stock updates, group ordering, and automated alerts for low stock or price drops.",
   icon: "S",
   image: "https://i.postimg.cc/7ZByZKBn/Screenshot-2025-07-30-002703.png",
-  link: "https://supplysaathi.vercel.app",
+  link: "https://supply-saathi-tawny.vercel.app/",
   challenges: [
     "Handling real-time stock sync between multiple suppliers and vendors",
     "Designing group-order logic for partial fulfillment and fallback",
@@ -137,27 +137,4 @@ export const projectsData = [
     ],
     github: "https://github.com/vaishnavi-ra-ut/WeatherBeats"
   },
-  {
-    id: 7,
-    title: "FoodDelivery App",
-    category: "Frontend",
-    tags: ["React", "Node.js", "MongoDB"],
-    date: "Nov 2023",
-    duration: "20 Days",
-    description: "A full-stack food ordering platform featuring real-time cart updates...",
-    icon: "F",
-    image: "/images/fooddelivery.png",
-    link: "https://fooddelivery.vercel.app",
-    challenges: [
-      "Implementing cart logic and persistent user sessions",
-      "Integrating secure Stripe payments and tracking order flow",
-      "Building admin dashboard with role-based access"
-    ],
-    outcomes: [
-      "Developed a production-ready e-commerce backend with payments",
-      "Built a responsive multi-role frontend using Redux",
-      "Handled authentication, order history, and admin workflows"
-    ],
-    github: "https://github.com/vaishnavi-ra-ut/Food-app-react"
-  }
 ];

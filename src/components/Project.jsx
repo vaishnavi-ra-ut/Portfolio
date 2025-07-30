@@ -92,7 +92,7 @@ export default function Projects() {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-sm btn-square hover:text-[#636ae8]"
+                    className=" hover:text-[#636ae8] hover:drop-shadow-[0_0_6px_rgba(192,132,252,0.4)]"
                   >
                     <Github />
                   </a>
@@ -110,8 +110,8 @@ export default function Projects() {
 
         {/* Modal */}
         {activeProject && (
-  <dialog open className="modal modal-bottom sm:modal-middle z-50 ">
-    <div className="modal-box bg-[#1c1c1c]/85 backdrop-blur-md border border-gray-700 text-white max-h-[90vh] overflow-y-auto shadow-[0_0_30px_#636ae8]/40 rounded-xl transition-all duration-300 scrollbar-thin scrollbar-thumb-[#636ae8]/40 scrollbar-track-transparent ">
+  <dialog open className="modal modal-bottom sm:modal-middle z-50 mt-7">
+    <div className="modal-box bg-[#1c1c1c]/90 backdrop-blur-md border border-gray-700 text-white max-h-[90vh] overflow-y-auto shadow-[0_0_30px_#636ae8]/40 rounded-xl transition-all duration-300 scrollbar-thin scrollbar-thumb-[#636ae8]/40 scrollbar-track-transparent ">
       <h3 className="text-2xl font-bold mb-4 flex items-center gap-3 text-[#f2f2f2]">
         <span className="btn bg-[#636ae8]/20 border-[#636ae8]/40 text-white shadow-md">
           {activeProject.icon}
